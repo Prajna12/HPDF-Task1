@@ -19,7 +19,6 @@ export default class Tab1 extends Component {
     }
   render(){
     return(
-      
         <Container>
         <Content style={{flex: 1}}>
         {/* <Spinner color='blue' /> */}
@@ -112,7 +111,6 @@ export default class Tab1 extends Component {
           </Card>
             ) : null 
           }
-          
           </Content>
           </Container>
     );
