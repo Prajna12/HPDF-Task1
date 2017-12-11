@@ -27,4 +27,4 @@ The app opens!!
 * Your phone and your system should be connected to the same network for the app to open.
 
 ## DEMO
-![alt text](./images)
+![alt text](./images/demo.gif)
