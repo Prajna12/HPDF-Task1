@@ -2,7 +2,6 @@ import React,{Component} from 'react';
 import { Text } from 'react-native';
 import { Font } from 'expo';
 import { Container } from 'native-base';
-
 export default class Moments extends Component {
     constructor(){
         super();
