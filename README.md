@@ -18,5 +18,10 @@ The task was to develop the frontend of the screens as given in few screenshots 
 
 The app opens!!
 
+### NOTE:
+* React doesn't work on npm 5 
 
-
+  If npm version 5 or above are installed, you need to downgrade to npm4 using this command: `npm install -g npm@4`
+  
+  npm version in your system can be found using this command: `npm -v`
+* 'Expo' app and your system should be connected to the same network for the app to open.
