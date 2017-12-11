@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import { Text,Image } from 'react-native';
 import { Container} from 'native-base';
-
 export default class Profile extends Component {
   render(){
     return(
