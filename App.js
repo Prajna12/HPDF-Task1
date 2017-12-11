@@ -4,8 +4,6 @@ import {  Header, Left, Body,Right, Button, Icon, Title,Thumbnail,Tabs,TabHeadin
 import Drawer from 'react-native-drawer';
 import SideBar from './src/SideBar';
 import Main from './src/Main';
-
-
 export default class App extends React.Component {
   constructor(props){
     super(props);
@@ -14,10 +12,6 @@ export default class App extends React.Component {
       drawerDisabled: false,
     };
   }
-  // state={
-  //   drawerOpen: false,
-  //   drawerDisabled: false,
-  // };
   closeDrawer = () => {
     this._drawer.close()
   };
@@ -39,14 +33,12 @@ export default class App extends React.Component {
         main: {opacity:(2-ratio)/2}
         })
        }
-       
-        >
-        <Main />
+      >
+      <Main />
       </Drawer>
     )
   }
 }
-
 const drawerStyles ={
   drawer: {shadowColor: '#000000', shadowOpacity: 0.8, shadowRadius: 3},
   main: {paddingLeft: 3}
