@@ -29,6 +29,7 @@ export default class App extends React.Component {
         panCloseMask={0.2}
         closedDrawerOffset={-3}
         styles={drawerStyles}
+        tapToOpen={true}
         tweenHandler={(ratio) => ({
         main: {opacity:(2-ratio)/2}
         })
