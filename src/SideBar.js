@@ -29,6 +29,7 @@ export default class SideBar extends React.Component {
     //console.log(username);
     return (
       <Container>
+      <View style={{paddingTop:Expo.Constants.statusBarHeight}}>
         <Content>
         <Card>
             <CardItem >
@@ -41,6 +42,7 @@ export default class SideBar extends React.Component {
                    <Text >   {followers} Followers</Text>
                 </View>
               </View>
+  
              </CardItem>
             <CardItem style={{elevation: 2,borderBottomWidth: 4,borderTopWidth: 4}}>
                <List
@@ -82,6 +84,7 @@ export default class SideBar extends React.Component {
             </Right>
           </Footer>
         </Content>
+        </View>
       </Container>
     );
   }
