@@ -27,8 +27,8 @@ export default class Main extends React.Component {
   render() {
     return (
         <Container>
-        <Header hasTabs style={{backgroundColor: "white"}} >
-        
+        <View style={{paddingTop:Expo.Constants.statusBarHeight}}>
+        <Header hasTabs style={{backgroundColor: "white"}} 
           <Left>
             <TouchableOpacity onPress={this.context.drawer.open}>
             <Thumbnail source={require("../images/face8.jpeg")} />
@@ -37,13 +37,12 @@ export default class Main extends React.Component {
           <Body>
           {this.state.fontLoaded ? (
             <Title style={{color: "black",alignContent: 'flex-start'}} >Home</Title>
-        ) : null 
-    }
+              ) : null 
+          }
           </Body>
           <Right />
-        
         </Header>
-        
+        </View>
         <Tabs initialPage={0} 
          tabBarUnderlineStyle={{backgroundColor:'#3BB9FF',borderBottomWidth:0}} >
           <Tab heading={ <TabHeading style={{backgroundColor:'white'}}><Icon name="home" style={{color:'#3BB9FF'}} /></TabHeading> } >
@@ -76,26 +75,11 @@ export default class Main extends React.Component {
                     <Right>
                       <Icon style={{ marginRight: 10, color: '#3BB9FF' }} name='settings'></Icon>
                   </Right>
-                  </FooterTab>
-                  
-        ) : null 
-                  }
-                </Footer>
-                
-                </Container>
+                  </FooterTab>         
+             ) : null 
+         }
+         </Footer>
+         </Container>
     );
   }
 }
-const styles = StyleSheet.create({
-    tabbar: {
-      height: 45,
-      flexDirection: 'row',
-      borderBottomWidth: 1,
-      borderBottomColor: 'blue',
-      backgroundColor: 'white',
-    },
-    tab: {
-      backgroundColor: 'blue'
-      
-    },
-  });
