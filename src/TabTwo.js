@@ -2,7 +2,6 @@ import React,{Component} from 'react';
 import { Text } from 'react-native';
 import { Font } from 'expo';
 import { Container, Header, Item, Input, Icon, Button } from 'native-base';
-
 export default class Tab2 extends Component {
     constructor(){
         super();
