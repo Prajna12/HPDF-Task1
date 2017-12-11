@@ -13,10 +13,8 @@ const routes = [
                 {name: 'Highlights',icon:'albums'} ];
 let userdetails='';
 export default class SideBar extends React.Component {
- 
   constructor() {
     super();
-    
     userdetails = {
           username: 'Prajna',
           userid: '@Prajnab704',
@@ -51,7 +49,6 @@ export default class SideBar extends React.Component {
                     return (
                     <ListItem
                      button noborder
-                     
                      icon>
                 <Left>
                    <Icon name={data.icon} style={{color: '#3BB9FF'}}/>
@@ -60,8 +57,6 @@ export default class SideBar extends React.Component {
               <Text>{data.name}</Text>
               </Body>
               <Right/>
-                
-                  
                 </ListItem>
               );
             }}
