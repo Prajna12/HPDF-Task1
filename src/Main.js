@@ -28,7 +28,7 @@ export default class Main extends React.Component {
     return (
         <Container>
         <View style={{paddingTop:Expo.Constants.statusBarHeight}}>
-        <Header hasTabs style={{backgroundColor: "white"}} 
+        <Header hasTabs style={{backgroundColor: "white"}}>
           <Left>
             <TouchableOpacity onPress={this.context.drawer.open}>
             <Thumbnail source={require("../images/face8.jpeg")} />
