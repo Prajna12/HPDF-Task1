@@ -18,6 +18,14 @@ The task was to develop the frontend of the screens as given in few screenshots 
 
 The app opens!!
 
+### Alternative way
+* Install expo XDE. Refer https://docs.expo.io/versions/latest/introduction/installation.html for installation.
+* Open expo XDE
+* Click on `Open existing project` and select `HPDF-Task1`
+* Once the project loads, click on Share.
+* Scan the QR code using the Expo app from your phone (Install from Playstore)
+The app opens!!
+
 ### NOTE:
 * React doesn't work on npm 5 
 
