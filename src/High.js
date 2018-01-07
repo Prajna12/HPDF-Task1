@@ -19,12 +19,27 @@ const cards = [
     image: require('../images/fact5.jpeg'),
   },
 ];
-export default class high extends Component {
+export default class High extends Component {
+  constructor(){
+    super();
+    this.state = {
+      fontLoaded: false
+    };
+  }
+async componentWillMount() {
+      await Expo.Font.loadAsync({
+        'Roboto': require('native-base/Fonts/Roboto.ttf'),
+        'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+        'FontAwesome': require('react-native-vector-icons/Fonts/FontAwesome.ttf')
+    });
+    this.setState({ fontLoaded: true});
+}
   render() {
     return (
       <Container>
         <Header />
         <View>
+        {this.state.fontLoaded ? (
           <DeckSwiper
             dataSource={cards}
             renderItem={item =>
@@ -48,6 +63,8 @@ export default class high extends Component {
               </Card>
             }
           />
+          ): null
+        }
         </View>
       </Container>
     );

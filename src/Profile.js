@@ -3,7 +3,22 @@ import { Text,Image } from 'react-native';
 import { Container} from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome';
 export default class Profile extends Component {
+  constructor(){
+    super();
+    this.state = {
+      fontLoaded: false
+    };
+  }
+async componentWillMount() {
+      await Expo.Font.loadAsync({
+        'Roboto': require('native-base/Fonts/Roboto.ttf'),
+        'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+        'FontAwesome': require('react-native-vector-icons/Fonts/FontAwesome.ttf')
+    });
+    this.setState({ fontLoaded: true});
+}
   render(){
+    
     return(
         <Container style={{flex: 1,
             justifyContent: 'center',

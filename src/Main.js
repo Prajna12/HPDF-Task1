@@ -19,6 +19,7 @@ export default class Main extends React.Component {
           await Expo.Font.loadAsync({
             'Roboto': require('native-base/Fonts/Roboto.ttf'),
             'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+            'FontAwesome': require('react-native-vector-icons/Fonts/FontAwesome.ttf')
         });
         this.setState({ fontLoaded: true});
     }
@@ -44,26 +45,31 @@ export default class Main extends React.Component {
           <Right />
         </Header>
         </View>
+        {this.state.fontLoaded ? (
         <Tabs initialPage={0} 
          tabBarUnderlineStyle={{backgroundColor:'#3BB9FF',borderBottomWidth:0}} >
-          <Tab heading={ <TabHeading style={{backgroundColor:'white'}}><Icon name="home" style={{color:'#3BB9FF'}} /></TabHeading> } >
+          <Tab heading={ <TabHeading style={{backgroundColor:'white'}}><Icon name="home" style={{color:'#3BB9FF'}} size={20} /></TabHeading> } >
             <Tab1 />
           </Tab>
-          <Tab heading={ <TabHeading style={{backgroundColor:'white'}} ><Icon name="search" style={{color:'#3BB9FF'}} /></TabHeading> }
+          <Tab heading={ <TabHeading style={{backgroundColor:'white'}} ><Icon name="search" style={{color:'#3BB9FF'}} size={20} /></TabHeading> }
           >
             <Tab2 />
           </Tab>
-          <Tab heading={ <TabHeading style={{backgroundColor:'white'}}><Icon name="notifications" style={{color:'#3BB9FF'}}/></TabHeading> }>
+          <Tab heading={ <TabHeading style={{backgroundColor:'white'}}><Icon name="bell-o" style={{color:'#3BB9FF'}} size={20} /></TabHeading> }>
                      <Tab3 />
           </Tab>
-          <Tab heading={ <TabHeading style={{backgroundColor:'white'}}><Icon name="mail" style={{color:'#3BB9FF'}} /></TabHeading> }
+          <Tab heading={ <TabHeading style={{backgroundColor:'white'}}><Icon name="envelope-o" style={{color:'#3BB9FF'}} size={20} /></TabHeading> }
           >
             <Tab4 />
           </Tab>
         </Tabs>
+        ) :null 
+        }
+        {this.state.fontLoaded ? (
         <Fab style={{ backgroundColor: '#3BB9FF', marginBottom: 30 }} position="bottomRight">
-            <Icon name="create" />
+            <Icon name="pencil" />
         </Fab>
+        ):null}
         <Footer style={{backgroundColor: 'white'}}>
         {this.state.fontLoaded ? (
                   <FooterTab style={{backgroundColor: 'white'}}>
@@ -74,7 +80,7 @@ export default class Main extends React.Component {
                       <Text style={{  fontWeight: 'bold'}}>Mentions</Text>
                     </Button>
                     <Right>
-                      <Icon style={{ marginRight: 10, color: '#3BB9FF' }} name='settings'></Icon>
+                      <Icon style={{ marginRight: 10, color: '#3BB9FF' }} name='gear' size={15} ></Icon>
                   </Right>
                   </FooterTab>         
              ) : null 

@@ -14,6 +14,7 @@ export default class Tab2 extends Component {
           await Expo.Font.loadAsync({
             'Roboto': require('native-base/Fonts/Roboto.ttf'),
             'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+            'FontAwesome': require('react-native-vector-icons/Fonts/FontAwesome.ttf')
         });
         this.setState({ fontLoaded: true});
     }
@@ -23,12 +24,14 @@ export default class Tab2 extends Component {
           {this.state.fontLoaded ? (
         <Header searchBar rounded style={{backgroundColor: '#3BB9FF'}} >
           <Item>
-            <Icon name="search" />
+            <Text>  </Text>
+            <Icon name="search" size={20}/>
+            <Text>   </Text>
             <Input placeholder="Search Twitter" />
           </Item>
-          <Button transparent>
+          {/* <Button transparent>
             <Text>Search</Text>
-          </Button>
+          </Button> */}
         </Header>
         ) : null 
       }

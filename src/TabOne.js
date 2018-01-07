@@ -15,6 +15,7 @@ export default class Tab1 extends Component {
           await Expo.Font.loadAsync({
             'Roboto': require('native-base/Fonts/Roboto.ttf'),
             'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+            'FontAwesome': require('react-native-vector-icons/Fonts/FontAwesome.ttf')
         });
         this.setState({ fontLoaded: true});
     }
@@ -31,7 +32,7 @@ export default class Tab1 extends Component {
                   <Body>
                     <Text>
                     <Text>Smarter Every Day</Text>
-                    <Text style={{color: '#a9a9a9'}}>  @smarter  20m <Icon name="arrow-dropdown" style={{color: '#a9a9a9'}}/></Text></Text>
+                    <Text style={{color: '#a9a9a9'}}>  @smarter  20m <Icon name="chevron-down" style={{color: '#a9a9a9'}}/></Text></Text>
                     <Text note>Fact for the day :)</Text>
                   </Body>
                 </Left>
@@ -44,23 +45,23 @@ export default class Tab1 extends Component {
               <CardItem style={{paddingLeft: 70, paddingRight: 30}} >
                 <Left>
                   <Button transparent>
-                    <Icon name="chatboxes" style={{color: '#3BB9FF'}}/>
+                    <Icon name="comment-o" style={{color: '#3BB9FF'}}/>
                     <Text>  60</Text>
                   </Button>
                   <Text>          </Text>
                   
                   <Button transparent>
-                    <Icon name="repeat" style={{color: '#3BB9FF'}}/>
+                    <Icon name="retweet" style={{color: '#3BB9FF'}}/>
                     <Text>  19</Text>
                   </Button>
                   <Text>          </Text>
                   <Button transparent>
-                    <Icon name="heart" style={{color: '#3BB9FF'}} />
+                    <Icon name="heart-o" style={{color: '#3BB9FF'}} />
                     <Text>  2</Text>
                   </Button>
                   <Text>          </Text>
                   <Button transparent >
-                    <Icon name="mail" style={{color: '#3BB9FF'}} />
+                    <Icon name="envelope-o" style={{color: '#3BB9FF'}} />
                   </Button>
                 </Left>
               </CardItem>
@@ -75,7 +76,7 @@ export default class Tab1 extends Component {
                 <Body>
                   <Text>
                   <Text>Style Queen</Text>
-                  <Text style={{color: '#a9a9a9'}}>  @stylerani  10m    <Icon name="arrow-dropdown" style={{color: '#a9a9a9'}}/></Text></Text>
+                  <Text style={{color: '#a9a9a9'}}>  @stylerani  10m    <Icon name="chevron-down" style={{color: '#a9a9a9'}}/></Text></Text>
                   <Text note>Winter has begun!! Girls know more about dry skin and how to take care of your skin here</Text>
                   <Text note style={{color: 'blue'}} >https://know_more_about_dry_skin.html</Text>
                 </Body>
@@ -89,23 +90,23 @@ export default class Tab1 extends Component {
             <CardItem style={{paddingLeft: 70, paddingRight: 30}}>
               <Left>
                 <Button transparent>
-                  <Icon name="chatboxes" style={{color: '#3BB9FF'}} />
+                  <Icon name="comment-o" style={{color: '#3BB9FF'}} />
                   <Text>  20</Text>
                 </Button>
                 <Text>          </Text>
                 
                 <Button transparent>
-                  <Icon name="repeat" style={{color: '#3BB9FF'}}/>
+                  <Icon name="retweet" style={{color: '#3BB9FF'}}/>
                   <Text>  9</Text>
                 </Button>
                 <Text>          </Text>
                 <Button transparent>
-                    <Icon name="heart" style={{color: '#3BB9FF'}}/>
+                    <Icon name="heart-o" style={{color: '#3BB9FF'}}/>
                     <Text>  2</Text>
                   </Button>
                   <Text>          </Text>
                 <Button transparent>
-                  <Icon name="mail" style={{color: '#3BB9FF'}} />
+                  <Icon name="envelope-o" style={{color: '#3BB9FF'}} />
                 </Button>
               </Left>
             </CardItem>
