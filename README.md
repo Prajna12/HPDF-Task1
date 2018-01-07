@@ -9,6 +9,7 @@ The task was to develop the frontend of the screens as given in few screenshots 
 * `npm install native-base --save`
 * `npm install --save react-native-drawer`
 * `npm install --save react-navigation`
+* `npm install --save react-native-vector-icons`
 
 ## To run the app
 * install 'expo' app on your android device. You can download it from the Google Play Store.
