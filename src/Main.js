@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Header, Left, Body,Right, Button, Icon, Title,Thumbnail,Tabs,TabHeading,Fab,Footer,FooterTab,Container, Tab,Text,ScrollableTab} from 'native-base';
+import {  Header, Left, Body,Right, Button,Title,Thumbnail,Tabs,TabHeading,Fab,Footer,FooterTab,Container, Tab,Text,ScrollableTab} from 'native-base';
 import {TouchableOpacity,StyleSheet,View} from 'react-native';
 import {PropTypes} from 'prop-types';
 import Tab1 from './TabOne';

@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import { Text, Image } from 'react-native';
 import { Font } from 'expo';
-import { Container, Content, Left, Body, Button, Icon, Thumbnail, Card, CardItem } from 'native-base';
+import { Container, Content, Left, Body, Button,Thumbnail, Card, CardItem } from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome';
 export default class Tab1 extends Component {
     constructor(props){

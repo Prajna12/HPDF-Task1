@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, StatusBar, Settings } from "react-native";
-import { Header,Footer,Left,Right,Card,CardItem,Text,Body,Container,Thumbnail,List,ListItem,Content,View,Icon} from "native-base";
+import { Header,Footer,Left,Right,Card,CardItem,Text,Body,Container,Thumbnail,List,ListItem,Content,View} from "native-base";
 import { StackNavigator } from 'react-navigation';
 import Profile from './Profile';
 import Lists from './List';
