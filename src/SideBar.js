@@ -6,6 +6,7 @@ import Profile from './Profile';
 import Lists from './List';
 import high from './High';
 import Moments from './Moment';
+import Icon from 'react-native-vector-icons/FontAwesome';
 const routes = [
                 {name: "Profile",icon: 'person'},
                 {name: "Lists", icon: 'list-box'},

@@ -6,6 +6,7 @@ import Tab1 from './TabOne';
 import Tab2 from './TabTwo';
 import Tab3 from './TabThree';
 import Tab4 from './TabFour';
+import Icon from 'react-native-vector-icons/FontAwesome';
 export default class Main extends React.Component {
     constructor(){
         super();

@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import { Text } from 'react-native';
 import { Font } from 'expo';
 import { Container} from 'native-base';
+import Icon from 'react-native-vector-icons/FontAwesome';
 export default class Lists extends Component {
     constructor(){
         super();
